@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi sitio web</h1>
+        <p id="fechaHora"></p>
+    </header>
+
+    
+<nav>
+    <button id="menuBtn" class="menu-btn">☰ Menú</button>
+
+    <div id="menuLinks" class="menu-links">
+        <a href="index.html">Inicio</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="articulos.html">Artículos</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+</nav>
+
+
+    <main>
+    <section class="bienvenida">
+        <h2>¡Bienvenido a mi sitio web!</h2>
+
+        <p>
+            Aquí encontrarás noticias, artículos e información
+            sobre tecnología, ciencia e historia.
+        </p>
+
+        <a href="noticias.html" class="boton-enlace">
+            Ver noticias
+        </a>
+    </section>
+
+    <section>
+        <h2>Explora nuestro contenido</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <img src="imagenes/tecnologia.jpg" alt="Tecnología">
+                <h3>Noticias</h3>
+                <p>Conoce las últimas novedades.</p>
+                <a href="noticias.html">Leer noticias</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagenes/ciencia.jpg" alt="Ciencia">
+                <h3>Artículos</h3>
+                <p>Descubre información interesante.</p>
+                <a href="articulos.html">Ver artículos</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagenes/historia.jpg" alt="Historia">
+                <h3>Contacto</h3>
+                <p>Envíanos tus consultas.</p>
+                <a href="contacto.html">Contáctanos</a>
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© 2026 Mi sitio web. Todos los derechos reservados.</p>
+    <p>Creado como proyecto de aprendizaje.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="menu.js"></script>
+<script src="reloj.js"></script>
+</body>
+
+</html>

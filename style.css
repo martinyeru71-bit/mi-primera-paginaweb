@@ -1,0 +1,299 @@
+
+/* Diseño general */
+body {
+    background-color: #e1f5fe;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Título principal */
+h1 {
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Subtítulos */
+h2 {
+    color: #2673a8;
+}
+
+/* Párrafos */
+p {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+header {
+    background-color: #164e83;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #212121;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Enlaces del menú */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 17px;
+}
+
+/* Efecto al pasar el mouse */
+nav a:hover {
+    color: #81d4fa;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    min-height: 250px;
+    scroll-margin-top: 20px;
+}
+
+/* Contenedor de tarjetas */
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+/* Diseño de cada tarjeta */
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos de las tarjetas */
+.tarjeta h3 {
+    color: #164e83;
+    font-size: 22px;
+}
+
+/* Texto de las tarjetas */
+.tarjeta p {
+    color: #333333;
+    font-size: 16px;
+}
+
+/* Imágenes de las tarjetas */
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        width: auto;
+    }
+
+    .tarjeta img {
+        height: 180px;
+    }
+
+}
+
+/* Botón interactivo */
+button {
+    background-color: #164e83;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+    background-color: #2673a8;
+}
+
+/* Fecha de las noticias */
+.fecha {
+    color: #2673a8;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Efecto de las tarjetas */
+.tarjeta {
+    transition: transform 0.3s;
+}
+
+/* Movimiento al pasar el mouse */
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+form button {
+    padding: 12px;
+    cursor: pointer;
+}
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta h3 {
+    color: #2673a8;
+}
+
+.tarjeta p {
+    font-size: 15px;
+}
+.bienvenida {
+    background-color: #c5e7f7;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+}
+
+.bienvenida h2 {
+    font-size: 30px;
+}
+
+.bienvenida p {
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+.boton-enlace {
+    display: inline-block;
+    background-color: #2673a8;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.boton-enlace:hover {
+    background-color: #164e75;
+}
+footer {
+    background-color: #2673a8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+}
+.menu-btn {
+    display: none;
+    background-color: #2673a8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .menu-links.abierto {
+        display: flex;
+    }
+}
+#fechaHora {
+    color: #2673a8;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
